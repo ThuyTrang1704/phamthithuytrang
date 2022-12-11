@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUYTRANGSTORE</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!----header(backgroud)------>
+    <div class="header" >
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="./images/logo.png" alt="" width="300px" height="199px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="DanhMuc.html">Danh Mục</a></li>
+                        <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                        <li><a href="Danhmucchitiet.html">Chi Tiết</a></li>
+                        <li><a href="LienHe.html">Liên Hệ</a></li>
+                        <li><a href="LapTH.html">Lap Thực Hành</a></li>
+                    </ul>
+                </nav>
+                <a href="GioHang.html"><img src="./images/cart.png" alt="" with="30px" height="30px"></a>
+                <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Hãy Tạo Cho Mình<br> Một Phong Cách Riêng</h1>
+                    <p>Mang lại niềm hạnh phúc khi được mua sắm tại cửa hàng,
+                        Giúp khách hàng có trải nghiệm chân thật nhất trên sản phẩm.</p>
+                    <a href="" class="btn">Tìm Kiếm</a>
+                </div>
+                <div class="col-2">
+                    <div style="max-width:300px">
+                        <img class="mySlides" src="./images/sp8.jpeg" >
+                        <img class="mySlides" src="./images/sp9.jpg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn" title="Lên đầu trang"><img src="https://img.icons8.com/ios/50/26e07f/circled-up.png"/></button>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        document.getElementById('myBtn').addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+    <!----Main(các sản phẩm)------>
+    <div class="categories">
+        <div class="small-container">
+                <div class="row">
+                    <div class="col-3" >
+                        <img src="./images/hang1.jpg" >
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/hang2.jpeg">
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/hang3.jpg" >
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-------Sản Phẩm nổi bật---->
+    <div class="small-container">
+        <h2 class="title">
+            Sản phẩm nổi bật
+        </h2>
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="./images/sp1.jpg" ></a>
+                <a href=""></a>
+                <h4>Đầm trắng tiểu thư</h4>
+                <p>400.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp4.jpg" ></a>
+                <a href=""></a>
+                <h4>Túi Xách </h4>
+                <p>200.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp6.jpeg" ></a>
+                <a href=""></a>
+                <h4>Giày Cao Gót </h4>
+                <p>250.000 VNĐ</p>
+            </div>
+           
+           
+        </div>
+        <!-------Sản Phẩm mới nhất---->
+        <h2 class="title">
+            Sản phẩm mới nhất
+
+        </h2>
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="./images/sp2.jpg"style="width:80%"></a>
+                <a href=""></a>
+                <h4>Váy Xòe</h4>
+                <p>450.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp5.jpeg" style="width:135%"></a>
+                <a href=""></a>
+                <h4>Túi xách Công Sở</h4>
+                <p>300.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp8.jpeg" style="width:135%"></a>
+                <a href=""></a>
+                <h4>Áo Khoác Thể Thao</h4></a>
+                <p>250.000 VNĐ</p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ------offer(slogan)---- -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/2524912-removebg-preview.png" alt="" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>THUYTRANGSTORE Góp Mặt Tại Nhiều Thị Trường</p><br>
+                    <b><font face="Times New Roman" size="6">THUYTRANGSTORE</font></b><br>
+                    <small>THUYTRANGSTORE Luôn Cung Cấp Các Mặt Hàng Uy Tín,Chất Lượng<br>Khách Hàng Thoải Mái Lựa Chọn Sản Phẩm Phù Họp Với Bản Thân <br>Tăng Vẻ Đẹp Ấn Tượng </small><br>
+                    <a href="" class="btn">Mua Ngay &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----brand(logo,thương hiệu)-----  -->
+    <div class="brand">
+        <div class="small-container">
+            <div class="row">
+               
+                <div class="col-5">
+                    <img src="./images/kisspng-gucci-logo-fashion-logo-gucci-5b092df487e072.3168436715273282445566.png"
+                        alt="">
+
+                </div>
+                
+                <div class="col-5">
+                    <img src="./images/chanell.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="./images/logo.png" alt="">
+                    <p>THUYTRANG STORE<br> Nơi mang đến phong cách - năng động - cá tính</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow </h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Zalo</a></li>
+                        <li><a href="">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liên Hệ</h3>
+                    <img src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png" />
+                    <p>DH52003933@studen.stu.edu.vn</p>
+                    <p>Call: 0800808080</p>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright@ 2021 - PHAMTHITHUYTRANG - D20_TH05</p>
+        </div>
+    </div>
+    <script>
+        window.alert("Xin chào!");    
+    </script>
+    
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+        MenuItem.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight = "200px";
+            }
+            else {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1000); // tự động chạy sau 1 s
+        }
+    </script>
+</body>
+
+</html>

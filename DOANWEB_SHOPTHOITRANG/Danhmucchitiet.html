@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANH MỤC CHI TIẾT</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/Danhmucchitiet.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo.png" alt="" width="300px" height="199px"></a>
+                </div>
+                <nav>
+                <ul id="MenuItem">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="DanhMuc.html">Danh Mục</a></li>
+                        <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                        <li><a href="Danhmucchitiet.html">Chi Tiết</a></li>
+                        <li><a href="LienHe.html">Liên Hệ</a></li>
+                        <li><a href="LapTH.html">Lap Thực Hành</a></li>
+                </ul>
+            </nav>
+            <a href="GioHang.html"><img src="./images/cart.png" alt="" with="30px" height="30px"></a>
+            <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- ------chi tiết sản phẩm---- -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/sp1.jpg" alt="" width="100%" id="product-img">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/sp1.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/sp1.jpg" alt=""width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/sp1.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col2">
+                <p>Đặt Mua</p>
+                <h1>Đầm trắng tiểu thư</h1>
+                <h4>400.000 VNĐ</h4>
+                <select name="" id="">
+                    <option value="">XXL</option>
+                    <option value="">XL</option>
+                    <option value="">L</option>
+                    <option value="">M</option>
+                    <option value="">S</option>
+
+                </select>
+                <input type="number" name="" id="" value="1">
+                <a href="GioHang.html" class="btn">Thêm Vào Giỏ Hàng</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- --------Sản phẩm liên quan----- -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Sản phẩm liên quan</h2>
+            <p>Xem thêm</p>
+        </div>
+    </div>
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="./images/sp1.jpg" style="width:100%"></a>
+                <a href=""></a>
+                <h4>Đầm trắng tiểu thư</h4>
+                <p>400.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp4.jpg" style="width:135%"></a>
+                <a href=""></a>
+                <h4>Túi Xách </h4>
+                <p>200.000 VNĐ</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="./images/sp6.jpeg" style="width:135%"></a>
+                <a href=""></a>
+                <h4>Giày Cao Gót </h4>
+                <p>250.000 VNĐ</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+     <!-----footer-->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="./images/logo.png" alt="">
+                    <p>THUYTRANG STORE<br>  Nơi mang đến phong cách - năng động - cá tính</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow </h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Zalo</a></li>
+                        <li><a href="">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liên Hệ</h3>
+                    <img src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png"/>
+                    <p>dh52003933@studen.stu.edu.vn</p>
+                    <p>Call:0800808080</p>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - PHAMTHITHUYTRANG - D20_TH05</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+        MenuItem.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight = "200px";
+
+            }
+            else {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

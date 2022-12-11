@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIÊN HỆ</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/lienhe.css">
+   
+</head>
+
+<body>
+ <!---- header------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo.png" alt="" width="300px" height="199px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItem">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="DanhMuc.html">Danh Mục</a></li>
+                        <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                        <li><a href="Danhmucchitiet.html">Chi Tiết</a></li>
+                        <li><a href="LienHe.html">Liên Hệ</a></li>
+                        <li><a href="LapTH.html">Lap Thực Hành</a></li>
+                </ul>
+            </nav>
+            <a href="GioHang.html"></a><img src="./images/cart.png" alt="" with="30px" height="30px">
+            <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- ------ Liên hệ----- -->
+   <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="./images/2524912-removebg-preview.png" alt="" width="100%">
+             </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <form action="" id="RegForm">
+                        <input type="text" name="" id="ruser" placeholder="Phạm Thị Thùy Trang" onblur="checkRUser()">
+                        <label for="" id="error-ruser"></label>
+                        <input type="email" name="" id="email" placeholder="DH52003933@student.stu.edu.vn"  onblur="checkEmail()">
+                        <label for="" id="error-email"></label>
+                        <input type="text" name="" id="ruser" placeholder="DH52003933" onblur="checkRUser()">
+                        <label for="" id="error-regpass"></label>
+                        <input type="text" name="" id="ruser" placeholder="D20_TH05" onblur="checkRUser()">
+                         <label for="" id="error-repass"></label>
+                        <button type="submit" class="btn">THÔNG TIN CÁ NHÂN</button>
+                     </form>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <!-----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="./images/logo.png" >
+                    <p>THUYTRANG STORE<br> Nơi mang đến phong cách - năng động - cá tính</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow </h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Zalo</a></li>
+                        <li><a href="">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liên Hệ</h3>
+                    <img src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png" />
+                    <p>DH52003933@studen.stu.edu.vn</p>
+                    <p>Call: 0800808080</p>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright@ 2021 - PHAMTHITHUYTRANG - D20_TH05</p>
+        </div>
+    </div>
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+        MenuItem.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight = "200px";
+
+            }
+            else {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+   
+</body>
+
+</html>
