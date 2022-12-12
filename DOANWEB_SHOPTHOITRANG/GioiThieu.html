@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỚI THIỆU</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo.png" alt="" width="300px" height="199px"></a>
+                </div>
+                <nav>
+                <ul id="MenuItem">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="DanhMuc.html">Danh Mục</a></li>
+                        <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                        <li><a href="Danhmucchitiet.html">Chi Tiết</a></li>
+                        <li><a href="LienHe.html">Liên Hệ</a></li>
+                        <li><a href="LapTH.html">Lap Thực Hành</a></li>
+                </ul>
+            </nav>
+            <a href="GioHang.html"><img src="./images/cart.png" alt="" with="30px" height="30px"></a>
+            <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- ------Chi tiết sản phẩm---- -->
+    <div class="small-container cart-page">
+        <table>  
+            <tr>
+                <td>
+                        <div class="col-4">
+                        <a href="./Danhmucchitiet.html"><img src="./images/sp1.jpg" width="10000px"; ></a>
+                        </div>
+                </td>
+                    
+                
+                <td><b><font face="Times New Roman " size="6">Giới Thiệu</font></b><br>
+                    <h3>-Hiện Nay nhu câu thời trang đang được nhiều người qua tâm<br>
+
+                        - Muốn tự xây dựng riêng giao diện Website <br>
+                    - Tạo ra một trang web về các sản phẩm thời trang<br>
+                    - Báo cáo cuối môn Thực thành Nhập môn Web & Ứng dụng <br>
+                    <a href="" class="btn">XEM THÊM</a><br>
+                    <h1><b>Các Chức Năng Đã Thực Hiện </b></h1><br>
+                    <h3>
+                    - Tạo hiệu ứng lên khi click chuột vào sản phẩm<br>
+                    - rê chuột hình sẽ zoom<br>
+                    - Hiệu ứng đổi con trỏ chuột khi rê liên kết<br>
+                    - Tạo dựng các liên kết<br>
+                    - Tạo nút lên đầu trang<br>
+                    - cho hình tự chuyển động<br>
+                    - kiểm tra được mail nếu nhập không hợp lệ<br>
+                    
+                </td>
+                
+            </tr>
+            
+            
+        </table>
+   
+    </div>
+     <!-----footer-->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="./images/logo.png" alt="">
+                    <p>THUYTRANG STORE<br> Nơi mang đến phong cách - năng động - cá tính</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow </h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Zalo</a></li>
+                        <li><a href="">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liên Hệ</h3>
+                    <img src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png"/>
+                    <p>dh52003933@studen.stu.edu.vn</p>
+                    <p>Call:0800808080</p>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - PHAMTHITHUYTRANG - D20_TH05</p>
+        </div>
+    </div>
+    <script>
+        var MenuItem = document.getElementById("MenuItem");
+        MenuItem.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItem.style.maxHeight == "0px") {
+                MenuItem.style.maxHeight = "200px";
+
+            }
+            else {
+                MenuItem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

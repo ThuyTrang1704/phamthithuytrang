@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỎ HÀNG</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/giohang.css">
+
+</head>
+
+<body>
+ <!-- -----header---- -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                 <img src="./images/logo.png" alt="" >
+            </div>
+            <nav>
+                <ul id="MenuItem">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="DanhMuc.html">Danh Mục</a></li>
+                        <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                        <li><a href="Danhmucchitiet.html">Chi Tiết</a></li>
+                        <li><a href="LienHe.html">Liên Hệ</a></li>
+                        <li><a href="LapTH.html">Lap Thực Hành</a></li>
+                        
+                </ul>
+            </nav>
+            <a href="GioHang.html"><img src="./images/cart.png" alt="" with="30px" height="30px"></a>
+            <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- -----chi tiết  giỏ hàng---- -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>tổng</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="./Danhmucchitiet.html"><img src="./images/sp1.jpg" width="100px"></a>
+                        <div>
+                            <p>Đầm Trắng Tiểu Thư</p>
+                            <small>400.000 VNĐ</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>400.000 VNĐ</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <a href="./Danhmucchitiet.html"><img src="./images/sp6.jpeg" width="100px"></a>
+                        <div>
+                            <p>Giày Cao Gót</p>
+                            <small>250.000 VNĐ</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>250.000 VNĐ</td>
+            
+        </table>
+    
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Sản Phẩm</td>
+                    <td>620.00 VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Thuế</td>
+                    <td>10.000VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Tổng</td>
+                    <td>630.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="" class="btn">Đặt hàng</a>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+<!-----footer-->
+<div class="footer">
+   <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+               <img src="./images/logo.png" alt="">
+               <p>THUYTRANG STORE<br> Nơi mang đến phong cách - năng động - cá tính</p>
+           </div>
+           <div class="footer-col-2">
+               <h3>Follow </h3>
+               <ul>
+                   <li><a href="">Facebook</a></li>
+                   <li><a href="">Zalo</a></li>
+                   <li><a href="">Instagram</a></li>
+                   
+               </ul>
+           </div>
+           <div class="footer-col-3">
+               <h3>Liên hệ</h3>
+               <img src="https://img.icons8.com/glyph-neue/64/ffffff/gmail.png"/>
+               <p>dh52003933@studen.stu.edu.vn</p>
+               <p>Call:0800808080</p>
+
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2021 - PHAMTHITHUYTRANG - D20_TH05</p>
+   </div>
+</div>
+<script>
+    var MenuItem = document.getElementById("MenuItem");
+    MenuItem.style.maxHeight = "0px";
+    function menutoggle() {
+        if (MenuItem.style.maxHeight == "0px") {
+            MenuItem.style.maxHeight = "200px";
+
+        }
+        else {
+            MenuItem.style.maxHeight = "0px";
+        }
+    }
+</script>
+    
+</body>
+
+</html>
